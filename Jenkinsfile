@@ -46,7 +46,7 @@ pipeline {
        echo TEST_URL
        echo SSH
        sh 'env'
-       sh 'ansible -i 172.31.85.208, all -e ansible_user=${SSH_USR} -e ansible_password=${SSH_PSW} -m ping'
+       sh 'ansible -i 172.31.83.86, all -e ansible_user=${SSH_USR} -e ansible_password=${SSH_PSW} -m ping'
        sh 'mvn version'
      }
    }
