@@ -6,6 +6,11 @@ pipeline {
       TEST_URL = "entertanova.com"
       SSH = credentials("centos-ssh")
     }
+
+    options {
+            ansiColor('xterm')
+        }
+
     stages {
 
         stage('Compile') {
