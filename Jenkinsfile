@@ -25,7 +25,7 @@ pipeline {
     //
     triggers { pollSCM('*/1 * * * *') }
     tools {
-       maven 'maven'
+      maven 'maven'
     }
 
     stages {
