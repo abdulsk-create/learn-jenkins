@@ -37,9 +37,9 @@ pipeline {
        ok "Yes, we should."
      }
 
-//      when {
-//        branch 'production'
-//      }
+     when {
+       branch 'production'
+     }
      steps {
        //echo 'Hello World'
        //error 'This is an error'
