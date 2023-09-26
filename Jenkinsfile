@@ -115,23 +115,23 @@ pipeline {
  }
 }
 
-// def x = 10
-// env.y = 20
-// def samplef() {
-//   print "XYZ Function"
-// }
-//
+def x = 10
+env.y = 20
+def samplef() {
+  print "XYZ Function"
+}
+
 node('workstation') {
   if (x >10 ) {
     stage('Test') {
       print x
       sh 'echo y - ${y}'
-//       samplef()
+      samplef()
     }
-//   } else {
-//     stage('Test1') {
-//       samplef()
-//     }
-//   }
-//
+  } else {
+    stage('Test1') {
+      samplef()
+    }
+  }
+
 }
