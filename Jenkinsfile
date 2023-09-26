@@ -4,7 +4,7 @@ pipeline {
 
     environment {
       TEST_URL = "entertanova.com"
-      SSH = credentials("centos-ssh")
+      SSH = credentials("centos--ssh")
     }
     stages {
 
